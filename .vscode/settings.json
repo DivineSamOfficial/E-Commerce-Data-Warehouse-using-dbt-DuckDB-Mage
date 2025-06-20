@@ -1,0 +1,9 @@
+{
+  "dbt.projectSubfolder": "dbt_duckdb_dwh",
+  "files.associations": {
+    "*.sql": "jinja-sql"
+  },
+  "dbt.enableNewLineagePanel": true,
+  "dbt.perspectiveTheme": "Vintage",
+  "dbt.queryLimit": 1000
+}

@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: src         # group name for raw data (convention)
+    description: "Raw data ingested from CSV files"
+    schema: sources
+    tables:
+      - name: sales         # dbt name you'll use in your models
+        description: "Sales Transactions source"
+        identifier: src_sales   # actual table name in DuckDB
+      - name: date
+        description: "Calender Table"
+        identifier: src_date

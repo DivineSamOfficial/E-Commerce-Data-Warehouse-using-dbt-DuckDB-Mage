@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: fct_sales
+    description: "Staged Fact Sales table"
+    columns:
+      - name: transaction_id
+        description: "Primary Key for transaction table"
+        tests:
+          - not_null
+          - unique
