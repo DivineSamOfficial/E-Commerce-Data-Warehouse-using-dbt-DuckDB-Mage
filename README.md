@@ -73,7 +73,7 @@ Orchestrated through Mage to first **refresh source CSV data** and then **run db
 
 High-level architecture showing how Mage, dbt, and DuckDB work together:
 
-![Architecture Diagram](./Snow_dbt_DWH.jpg)
+![Architecture Diagram](Images/Snow_dbt_DWH.jpg)
 
 ---
 
