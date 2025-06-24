@@ -1,0 +1,60 @@
+blocks:
+- all_upstream_blocks_executed: true
+  color: blue
+  configuration: {}
+  downstream_blocks:
+  - gallant_core
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: run_refresh_sources
+  retry_config: null
+  status: executed
+  timeout: null
+  type: custom
+  upstream_blocks: []
+  uuid: run_refresh_sources
+- all_upstream_blocks_executed: true
+  color: grey
+  configuration: {}
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: gallant core
+  retry_config: null
+  status: executed
+  timeout: null
+  type: custom
+  upstream_blocks:
+  - run_refresh_sources
+  uuid: gallant_core
+cache_block_output_in_memory: false
+callbacks: []
+concurrency_config: {}
+conditionals: []
+created_at: '2025-06-23 07:25:23.127672+00:00'
+data_integration: null
+description: This pipeline is for orchestrating, refreshing sources and to run "dbt
+  run" command to maintain data freshness
+executor_config: {}
+executor_count: 1
+executor_type: null
+extensions: {}
+name: refresh_dbt_pipeline
+notification_config: {}
+remote_variables_dir: null
+retry_config: {}
+run_pipeline_in_one_process: false
+settings:
+  triggers: null
+spark_config: {}
+tags:
+- refresh
+- dbt
+type: python
+uuid: refresh_dbt_pipeline
+variables_dir: /Users/divinesam/.mage_data/dbtduckdb_orchestration
+widgets: []
