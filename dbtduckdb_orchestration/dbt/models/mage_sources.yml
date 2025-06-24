@@ -1,0 +1,13 @@
+sources:
+- description: Dataframes Mage upstream blocks
+  loader: mage
+  name: mage_dbt
+  tables:
+  - description: Dataframe for block `run_refresh_sources` of the `refresh_dbt_pipeline`
+      mage pipeline.
+    identifier: mage_refresh_dbt_pipeline_run_refresh_sources
+    meta:
+      block_uuid: run_refresh_sources
+      pipeline_uuid: refresh_dbt_pipeline
+    name: refresh_dbt_pipeline_run_refresh_sources
+version: 2

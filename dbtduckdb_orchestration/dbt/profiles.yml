@@ -1,0 +1,17 @@
+# https://docs.getdbt.com/docs/core/connect-data-platform/profiles.yml
+
+dbt_duckdb_dwh:
+  outputs:
+    dev:
+      type: duckdb
+      path: ../../dbt_duckdb_dwh/dev.duckdb
+      threads: 1
+      schema: ""
+
+    prod:
+      type: duckdb
+      path: ../../dbt_duckdb_dwh/prod.duckdb
+      threads: 4
+      schema: ""
+
+  target: dev
